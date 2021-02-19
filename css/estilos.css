@@ -99,7 +99,7 @@
     /* box-shadow: derecha abajo difuminado color; */
     display: flex;
     /* margin-bottom: 40px; */
-    padding: 30px;
+    padding: 4%;
     margin: 0px 0px 30px 0px;
     background-color: white;
     display: flex;
@@ -117,7 +117,7 @@
   }
   
   .project-left {
-    width: 500px;
+    width: 48%;
   }
   
   .project-title {
@@ -148,16 +148,13 @@
     font-size: 20px;
   }
   
-  .project-containerRight {
-    /* width: 200px; */
-    /* height: 350px; */
-    width: inherit;
-    height: inherit;
+  .project-container_image {
+    width: 48%;
+    margin: 0px;
   }
   
   .project-image {
-    width: inherit;
-    height: inherit;
+    width: 100%;
   }
   
   .experience-main-title {
@@ -390,8 +387,55 @@
       margin: 0px 0px 0px 0px;
       padding: 10px 0px;
     }
+    .project {
+      display: block;
+      font-size: 16px;
+      box-shadow: 0px 0px 8px;
+    }
+    .project-left {
+      width: auto;
+    }
+    .project-container_image {
+      width: 100%;
+    }
+    .project-title {
+      font-size: 1.2em;
+    }
+    .project-description {
+      font-size: 1em;
+    }
+    .project-language,
+    .project-date,
+    .project-link,
+    .project-description {
+      margin: 1em 0em;
+    }
+    .projects h2 {
+      font-size: 1.5em;
+      padding: 1em 0;
+    }
   }
   
-  @media screen and (max-width:480px) {}
+  @media screen and (max-width:480px) {
+    .projects {
+      font-size: 0.8em;
+      padding: 0 1.2em 0.8em 1.2em;
+    }
+    .project {
+      font-size: 14px;
+      box-shadow: 0px 0px 6px;
+    }
+    .link {
+      padding: 0.5em 0em;
+    }
+  }
   
-  @media screen and (max-width:320px) {}
+  @media screen and (max-width:320px) {
+    .project {
+      box-shadow: 0px 0px 4px;
+      margin-bottom: 1.5em;
+    }
+    .link {
+      padding: 0.4em 0;
+    }
+  }
