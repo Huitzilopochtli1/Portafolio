@@ -1,5 +1,6 @@
   body {
     margin: 0;
+    font-size: 16px;
   }
   
   .header {
@@ -13,7 +14,7 @@
   
   .header figure {
     margin: 0px 0px 0px 20px;
-    width: 50px;
+    width: 120px;
     height: 50px;
   }
   
@@ -88,7 +89,7 @@
   }
   
   .projects {
-    padding: 0px 30px 10px 30px;
+    padding: 0px 1.5rem 10px 1.5rem;
     background-color: #76737a25;
   }
   
@@ -99,8 +100,8 @@
     /* box-shadow: derecha abajo difuminado color; */
     display: flex;
     /* margin-bottom: 40px; */
-    padding: 4%;
-    margin: 0px 0px 30px 0px;
+    padding: 2%;
+    margin: 0px 0px 1.8rem 0px;
     background-color: white;
     display: flex;
     justify-content: space-between;
@@ -110,10 +111,10 @@
   
   h2 {
     margin: 0;
-    padding: 30px 0px;
+    padding: 1.5rem 0px;
     text-transform: uppercase;
     color: #005086;
-    font-size: 30px;
+    font-size: 1.6rem;
   }
   
   .project-left {
@@ -121,31 +122,20 @@
   }
   
   .project-title {
-    margin: 0px;
-    font-size: 25px;
-    margin-bottom: 10px;
+    margin: 0 0 0.7rem 0;
+    font-size: 1.3rem;
   }
   
-  .project-language {
-    margin-top: 20px;
-  }
-  
-  .project-date {
-    margin-top: 20px;
-  }
-  
-  .project-link {
-    margin-top: 20px;
+  .project-language,
+  .project-date,
+  .project-link,
+  .project-description {
+    margin: 0.7rem 0;
   }
   
   .project-link a {
     text-decoration: none;
     color: black;
-  }
-  
-  .project-description {
-    margin-top: 20px;
-    font-size: 20px;
   }
   
   .project-container_image {
@@ -159,10 +149,12 @@
   
   .experience-main-title {
     /* margin-left: 30px; */
+    margin: 0px;
+    padding: 1.5rem 0 1.5rem 1.5rem;
   }
   
   .experiences {
-    padding: 0px 30px;
+    padding: 0px 1.5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -170,29 +162,30 @@
   
   .experience {
     /* border: 1px solid blue; */
-    margin: 0px 20px 40px 0px;
-    width: 480px;
+    margin: 0px 2% 40px 0px;
+    /*width: 480px;*/
+    width: 48%;
     border-radius: 10px;
     overflow: hidden;
     flex-shrink: 0;
     background-color: #f4fbff;
   }
   
-  .experience-container_imgage {
+  .experience-container_image {
     margin: 0px;
-    width: inherit;
+    width: 100%;
     height: 200px;
   }
   
   .experience-image {
     width: inherit;
     height: inherit;
-    object-fit: cover;
+    object-fit: contain;
   }
   
   .experience-down {
-    margin: 20px 40px;
-    margin-top: -40px;
+    margin: 0px 1.5rem 1.3rem 1.5rem;
+    margin-top: -2rem;
     position: relative;
     background-color: white;
     padding: 20px;
@@ -296,7 +289,7 @@
     background-position-y: center;
     background-position-x: 5px;
     outline: none;
-    margin-top: 10px;
+    margin-top: 20px;
   }
   
   .contact-form button {
@@ -361,8 +354,7 @@
     height: 200px;
     flex-shrink: 0;
   } */
-  
-  @media screen and (max-width:1024px) {}
+  /*@media screen and (max-width:1024px) {}*/
   
   @media screen and (max-width:767px) {
     .header {
@@ -389,14 +381,15 @@
     }
     .project {
       display: block;
-      font-size: 16px;
-      box-shadow: 0px 0px 8px;
+      padding: 2%;
+      /*font-size: 16px;*/
+      box-shadow: 0px 0px 8px black;
     }
     .project-left {
       width: auto;
     }
     .project-container_image {
-      width: 100%;
+      width: auto;
     }
     .project-title {
       font-size: 1.2em;
@@ -408,34 +401,109 @@
     .project-date,
     .project-link,
     .project-description {
-      margin: 1em 0em;
+      margin: 0.6rem 0;
     }
     .projects h2 {
-      font-size: 1.5em;
-      padding: 1em 0;
+      padding: 1.3rem 0;
+      font-size: 1.5rem;
+    }
+    .experiences {
+      display: block;
+    }
+    .experience {
+      width: 100%;
+      margin: 0px 2% 3rem 0px;
+    }
+    .experience-main-title {
+      padding: 1.3rem 0 1.3rem 1.5rem;
     }
   }
+  /*fin @media 767*/
   
   @media screen and (max-width:480px) {
     .projects {
-      font-size: 0.8em;
-      padding: 0 1.2em 0.8em 1.2em;
+      padding: 0px 1.2rem 6px 1.2rem;
     }
     .project {
-      font-size: 14px;
-      box-shadow: 0px 0px 6px;
+      box-shadow: 0px 0px 6px black;
+    }
+    .project h2 {
+      font-size: 1.2rem;
+    }
+    .project-language,
+    .project-date,
+    .project-link,
+    .project-description {
+      margin: 0.6rem 0;
+      font-size: 1rem;
     }
     .link {
       padding: 0.5em 0em;
     }
+    .experiences {
+      padding: 1.2rem;
+    }
+    .experience {
+      margin: 0px 2% 2.5rem 0px;
+    }
+    .experience-down {
+      padding: 1rem;
+      margin: 0 1.5rem 1.3rem 1.5rem;
+      margin-top: -1.5rem;
+    }
+    .experience-main-title {
+      font-size: 1.4rem;
+      padding: 1.1rem 0 1.1rem 1.2rem;
+    }
   }
+  /*fin @media 480*/
   
   @media screen and (max-width:320px) {
     .project {
-      box-shadow: 0px 0px 4px;
-      margin-bottom: 1.5em;
+      box-shadow: 0px 0px 4px black;
+      margin-bottom: 0.9rem;
+      padding: 4%;
     }
     .link {
       padding: 0.4em 0;
     }
+    .projects {
+      padding: 0px 0.9rem 6px 0.9rem;
+    }
+    .project h2 {
+      padding: 1.1rem 0;
+      font-size: 1.3rem;
+    }
+    .project-title {
+      font-size: 1.1rem;
+    }
+    .project-language,
+    .project-date,
+    .project-link,
+    .project-description {
+      margin: 0.6rem 0;
+      font-size: 0.9rem;
+    }
+    .experiences {
+      padding: 0px 0.9rem;
+    }
+    .experience {
+      margin: 0px 2% 2rem 0px;
+    }
+    .experience-down {
+      padding: 0.8rem;
+      margin: 0 1rem 1.3rem 1rem;
+      margin-top: -1.5rem;
+    }
+    .experience-title {
+      font-size: 1rem;
+    }
+    .experience-description {
+      font-size: 0.9rem;
+    }
+    .experience-main-title {
+      font-size: 1.3rem;
+      padding: 1.1rem 0 1.1rem 0.9rem;
+    }
   }
+  /*fin @media 320*/
