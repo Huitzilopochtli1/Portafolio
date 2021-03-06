@@ -4,45 +4,56 @@
 
 <!-- Es el padre de todas las etiquetas y tiene un atributo lang que representa el lenguaje -->
 <html lang="en">
+  <head>
+    <!-- tipo de lenguaje unicode -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniel Quintanilla</title>
+    <link
+      rel="shortcut icon"
+      href="img/Huitzilopochtli.ico"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
 
-<head>
-  <!-- tipo de lenguaje unicode -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Daniel Quintanilla</title>
-  <link rel="shortcut icon" href="img/Huitzilopochtli.ico" type="image/x-icon" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/estilos.css">
-
-
-</head>
-
-<body>
-
-  <header class="header">
-    <div class="wrapper">
-      <figure>
-        <img src="img/Huitzilopochtli.ico" alt="logo de Huitzilopochtli" />
-      </figure>
-
-      <nav class="menu">
-        <ul>
-          <li>
-            <a class="link" href="#proyecto">Proyectos</a>
-          </li>
-
-          <li>
-            <a class="link" href="#experiencia">Experiencia</a>
-          </li>
-
-          <li>
-            <a class="link" href="#contacto">Contactame</a>
-          </li>
-        </ul>
-      </nav>
+  <body>
+    <div class="posiciones">
+      <p>
+        estoy <span class="aprende"> aprendiendo </span>
+        <span class="responsive">Responsive Design</span>
+      </p>
     </div>
-  </header>
-  <!--
+
+    <div class="posiciones"></div>
+    <div class="posiciones"></div>
+    <div class="posiciones"></div>
+
+    <header class="header">
+      <div class="wrapper">
+        <figure>
+          <img src="img/Huitzilopochtli.ico" alt="logo de Huitzilopochtli" />
+        </figure>
+
+        <nav class="menu">
+          <ul>
+            <li>
+              <a class="link" href="#proyecto">Proyectos</a>
+            </li>
+
+            <li>
+              <a class="link" href="#experiencia">Experiencia</a>
+            </li>
+
+            <li>
+              <a class="link" href="#contacto">Contactame</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--
   <section class="main">
     <div class="wrapper">
       <h1>
@@ -54,147 +65,202 @@
     </div>
   </section>-->
 
-  <!--CLASE PROJECTS-->
-  <section id="proyecto" class="projects">
-    <div class="wrapper">
-      <h2>Proyectos</h2>
-      <article class="project">
-        <div class="project-left">
-          <h3 class="project-title">Seguimiento</h3>
-          <h4 class="project-language">Flutter</h4>
-          <p class="project-date"><strong>20/01/2020</strong></p>
-          <p class="project-link">
-            <a href="#">Proyecto de seguimiento </a>
-          </p>
-          <p class="project-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, impedit eos. Id eligendi repellat dolore. Porro eaque aliquam minus. Blanditiis, minima? Tenetur voluptatem est unde itaque nihil inventore eligendi esse. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Dignissimos natus labore blanditiis soluta libero ratione neque distinctio porro dolores, expedita quos rem eius impedit, ab voluptatum doloribus doloremque necessitatibus inventore.
-          </p>
-        </div>
-        <figure class="project-container_image">
-          <img class="project-image" src="img/IMG-20190512-WA0090.jpg" alt="peña nieto" />
-        </figure>
-      </article>
+    <!--CLASE PROJECTS-->
+    <section id="proyecto" class="projects">
+      <div class="wrapper">
+        <h2>Proyectos</h2>
+        <article class="project">
+          <div class="project-left">
+            <h3 class="project-title">Seguimiento</h3>
+            <h4 class="project-language">Flutter</h4>
+            <p class="project-date"><strong>20/01/2020</strong></p>
+            <p class="project-link">
+              <a href="#">Proyecto de seguimiento </a>
+            </p>
+            <p class="project-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+              impedit eos. Id eligendi repellat dolore. Porro eaque aliquam
+              minus. Blanditiis, minima? Tenetur voluptatem est unde itaque
+              nihil inventore eligendi esse. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Dignissimos natus labore blanditiis
+              soluta libero ratione neque distinctio porro dolores, expedita
+              quos rem eius impedit, ab voluptatum doloribus doloremque
+              necessitatibus inventore.
+            </p>
+          </div>
+          <figure class="project-container_image">
+            <img
+              class="project-image"
+              src="img/IMG-20190512-WA0090.jpg"
+              alt="peña nieto"
+            />
+          </figure>
+        </article>
 
-      <article class="project">
-        <div class="project-left">
-          <h3 class="project-title">Seguimiento</h3>
-          <h4 class="project-language">Flutter</h4>
-          <p class="project-date"><strong>20/01/2021</strong></p>
-          <p class="project-link">
-            <a href="#">Proyecto de seguimiento </a>
-          </p>
-          <p class="project-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, impedit eos. Id eligendi repellat dolore. Porro eaque aliquam minus. Blanditiis, minima? Tenetur voluptatem est unde itaque nihil inventore eligendi esse. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Dignissimos natus labore blanditiis soluta libero ratione neque distinctio porro dolores, expedita quos rem eius impedit, ab voluptatum doloribus doloremque necessitatibus inventore.
-          </p>
-        </div>
-        <figure class="project-container_image">
-          <img class="project-image" src="img/IMG-20190512-WA0090.jpg" alt="dino" />
-        </figure>
-      </article>
-    </div>
-  </section>
-  <!-- FIN CLASE PROJECTS -->
-
-
-  <div class="wrapper">
-    <h2 class="experience-main-title">Experiencia</h2>
-  </div>
-
-  <section id="experiencia" class="experiences">
-    <div class="wrapper">
-      <article class="experience">
-        <figure class="experience-container_image">
-          <img class="experience-image" src="img/IMG-20190915-WA0080.jpg" alt="tumor" />
-        </figure>
-        <div class="experience-down">
-          <h3 class="experience-title">Gastronomia</h3>
-          <p class="experience-description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, porro blanditiis? Reprehenderit, sapiente quo autem reiciendis et eius, beatae temporibus harum suscipit commodi eaque? Iure rerum unde eum explicabo ipsa. Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. Sint nisi recusandae sequi eligendi, consectetur nobis laborum consequuntur libero qui dolores, deserunt praesentium natus similique quae, expedita magni. Rerum, maiores aliquam?
-          </p>
-          <button>Enviar</button>
-        </div>
-      </article>
-
-      <article class="experience">
-        <figure class="experience-container_image">
-          <img class="experience-image" src="img/IMG-20190915-WA0080.jpg" alt="tumor" />
-        </figure>
-        <div class="experience-down">
-          <h3 class="experience-title">Gastronomia</h3>
-          <p class="experience-description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, porro blanditiis? Reprehenderit, sapiente quo autem reiciendis et eius, beatae temporibus harum suscipit commodi eaque? Iure rerum unde eum explicabo ipsa. Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. Sint nisi recusandae sequi eligendi, consectetur nobis laborum consequuntur libero qui dolores, deserunt praesentium natus similique quae, expedita magni. Rerum, maiores aliquam?
-          </p>
-          <button>Enviar</button>
-        </div>
-      </article>
-
-      <article class="experience">
-        <figure class="experience-container_image">
-          <img class="experience-image" src="img/IMG-20190915-WA0080.jpg" alt="tumor" />
-        </figure>
-        <div class="experience-down">
-          <h3 class="experience-title">Gastronomia</h3>
-          <p class="experience-description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, porro blanditiis? Reprehenderit, sapiente quo autem reiciendis et eius, beatae temporibus harum suscipit commodi eaque? Iure rerum unde eum explicabo ipsa. Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. Sint nisi recusandae sequi eligendi, consectetur nobis laborum consequuntur libero qui dolores, deserunt praesentium natus similique quae, expedita magni. Rerum, maiores aliquam?
-          </p>
-          <button>Enviar</button>
-        </div>
-      </article>
-
-      <article class="experience">
-        <figure class="experience-container_image">
-          <img class="experience-image" src="img/IMG-20190915-WA0080.jpg" alt="tumor" />
-        </figure>
-        <div class="experience-down">
-          <h3 class="experience-title">Gastronomia</h3>
-          <p class="experience-description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, porro blanditiis? Reprehenderit, sapiente quo autem reiciendis et eius, beatae temporibus harum suscipit commodi eaque? Iure rerum unde eum explicabo ipsa. Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. Sint nisi recusandae sequi eligendi, consectetur nobis laborum consequuntur libero qui dolores, deserunt praesentium natus similique quae, expedita magni. Rerum, maiores aliquam?
-          </p>
-          <button>Enviar</button>
-        </div>
-      </article>
-    </div>
-  </section>
-
-
-  <!-- CLASE CONTACTO -->
-  <section id="contacto" class="contact">
-    <div class="wrapper">
-      <form action="" class="contact-form">
-        <h2>contacto</h2>
-        <input type="texto" placeholder="Dejame tu email">
-        <button>enviar</button>
-      </form>
-
-      <div class="redes">
-        <a href="#" class="redes-link github"></a>
-        <a href="#" class="redes-link facebook"></a>
-        <a href="#" class="redes-link instagram"></a>
-        <a href="#" class="redes-link twitter"></a>
+        <article class="project">
+          <div class="project-left">
+            <h3 class="project-title">Seguimiento</h3>
+            <h4 class="project-language">Flutter</h4>
+            <p class="project-date"><strong>20/01/2021</strong></p>
+            <p class="project-link">
+              <a href="#">Proyecto de seguimiento </a>
+            </p>
+            <p class="project-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+              impedit eos. Id eligendi repellat dolore. Porro eaque aliquam
+              minus. Blanditiis, minima? Tenetur voluptatem est unde itaque
+              nihil inventore eligendi esse. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Dignissimos natus labore blanditiis
+              soluta libero ratione neque distinctio porro dolores, expedita
+              quos rem eius impedit, ab voluptatum doloribus doloremque
+              necessitatibus inventore.
+            </p>
+          </div>
+          <figure class="project-container_image">
+            <img
+              class="project-image"
+              src="img/IMG-20190512-WA0090.jpg"
+              alt="dino"
+            />
+          </figure>
+        </article>
       </div>
-    </div>
-  </section>
-  <!-- FIN CLASE CONTACTO -->
+    </section>
+    <!-- FIN CLASE PROJECTS -->
 
-
-
-  <!-- CLASE FOOTER -->
-  <footer class="footer">
     <div class="wrapper">
-      <div class="footer-details">
-        <p>Curso de desarrollo web</p>
-        <img src="img/Huitzilopochtli.ico" alt="">
-      </div>
-      <p>Diseñado por Daniel Quintanilla 😀 🐰🐭🍕 </p>
+      <h2 class="experience-main-title">Experiencia</h2>
     </div>
-  </footer>
-  <!-- FIN CLASE FOOTER -->
-</body>
 
+    <section id="experiencia" class="experiences">
+      <div class="wrapper">
+        <article class="experience">
+          <figure class="experience-container_image">
+            <img
+              class="experience-image"
+              src="img/IMG-20190915-WA0080.jpg"
+              alt="tumor"
+            />
+          </figure>
+          <div class="experience-down">
+            <h3 class="experience-title">Gastronomia</h3>
+            <p class="experience-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, porro
+              blanditiis? Reprehenderit, sapiente quo autem reiciendis et eius,
+              beatae temporibus harum suscipit commodi eaque? Iure rerum unde
+              eum explicabo ipsa. Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Sint nisi recusandae sequi eligendi, consectetur
+              nobis laborum consequuntur libero qui dolores, deserunt
+              praesentium natus similique quae, expedita magni. Rerum, maiores
+              aliquam?
+            </p>
+            <button>Enviar</button>
+          </div>
+        </article>
+
+        <article class="experience">
+          <figure class="experience-container_image">
+            <img
+              class="experience-image"
+              src="img/IMG-20190915-WA0080.jpg"
+              alt="tumor"
+            />
+          </figure>
+          <div class="experience-down">
+            <h3 class="experience-title">Gastronomia</h3>
+            <p class="experience-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, porro
+              blanditiis? Reprehenderit, sapiente quo autem reiciendis et eius,
+              beatae temporibus harum suscipit commodi eaque? Iure rerum unde
+              eum explicabo ipsa. Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Sint nisi recusandae sequi eligendi, consectetur
+              nobis laborum consequuntur libero qui dolores, deserunt
+              praesentium natus similique quae, expedita magni. Rerum, maiores
+              aliquam?
+            </p>
+            <button>Enviar</button>
+          </div>
+        </article>
+
+        <article class="experience">
+          <figure class="experience-container_image">
+            <img
+              class="experience-image"
+              src="img/IMG-20190915-WA0080.jpg"
+              alt="tumor"
+            />
+          </figure>
+          <div class="experience-down">
+            <h3 class="experience-title">Gastronomia</h3>
+            <p class="experience-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, porro
+              blanditiis? Reprehenderit, sapiente quo autem reiciendis et eius,
+              beatae temporibus harum suscipit commodi eaque? Iure rerum unde
+              eum explicabo ipsa. Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Sint nisi recusandae sequi eligendi, consectetur
+              nobis laborum consequuntur libero qui dolores, deserunt
+              praesentium natus similique quae, expedita magni. Rerum, maiores
+              aliquam?
+            </p>
+            <button>Enviar</button>
+          </div>
+        </article>
+
+        <article class="experience">
+          <figure class="experience-container_image">
+            <img
+              class="experience-image"
+              src="img/IMG-20190915-WA0080.jpg"
+              alt="tumor"
+            />
+          </figure>
+          <div class="experience-down">
+            <h3 class="experience-title">Gastronomia</h3>
+            <p class="experience-description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, porro
+              blanditiis? Reprehenderit, sapiente quo autem reiciendis et eius,
+              beatae temporibus harum suscipit commodi eaque? Iure rerum unde
+              eum explicabo ipsa. Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Sint nisi recusandae sequi eligendi, consectetur
+              nobis laborum consequuntur libero qui dolores, deserunt
+              praesentium natus similique quae, expedita magni. Rerum, maiores
+              aliquam?
+            </p>
+            <button>Enviar</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CLASE CONTACTO -->
+    <section id="contacto" class="contact">
+      <div class="wrapper">
+        <form action="" class="contact-form">
+          <h2>contacto</h2>
+          <input type="texto" placeholder="Dejame tu email" />
+          <button>enviar</button>
+        </form>
+
+        <div class="redes">
+          <a href="#" class="redes-link github"></a>
+          <a href="#" class="redes-link facebook"></a>
+          <a href="#" class="redes-link instagram"></a>
+          <a href="#" class="redes-link twitter"></a>
+        </div>
+      </div>
+    </section>
+    <!-- FIN CLASE CONTACTO -->
+
+    <!-- CLASE FOOTER -->
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer-details">
+          <p>Curso de desarrollo web</p>
+          <img src="img/Huitzilopochtli.ico" alt="" />
+        </div>
+        <p>Diseñado por Daniel Quintanilla 😀 🐰🐭🍕</p>
+      </div>
+    </footer>
+    <!-- FIN CLASE FOOTER -->
+  </body>
 </html>
