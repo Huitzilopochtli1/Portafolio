@@ -235,7 +235,7 @@
   .contact {
     display: flex;
     background-color: rgba(54, 208, 228, 0.795);
-    padding: 30px 30px 30px 0px;
+    padding: 1.7rem 2.5rem 1.7rem 2.5rem;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
@@ -275,7 +275,7 @@
   
   .contact-form {
     /* border: 1px solid blue; */
-    margin-left: 30px;
+    /*margin-left: 30px;*/
   }
   
   .contact-form input {
@@ -338,11 +338,11 @@
     height: inherit;
     flex-wrap: inherit;
   }
-  /* @media screen and (max-width:1024px) {
+   @media screen and (max-width:1024px) {
     body {
-      border: 10px solid lime;
+      /*border: 10px solid lime;*/
     }
-  } */
+  } 
   /* .flex {
     display: flex;
     flex-wrap: wrap;
@@ -419,6 +419,28 @@
     }
   }
   /*fin @media 767*/
+
+  @media screen and (max-width:580px){
+    .contact{
+      justify-content:center;
+      padding: 1.7rem 2.5rem 0rem 2.5rem;
+
+    }
+    .contact-form{
+      text-align: center;
+      margin-left: 0px;
+    }
+    .contact-form button{
+      margin: 1rem auto 1.2rem auto;
+    }
+    .redes-link{
+      margin-bottom: 1rem;
+    }
+    .redes{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }/*fin @media 570*/
   
   @media screen and (max-width:480px) {
     .projects {
@@ -504,6 +526,9 @@
     .experience-main-title {
       font-size: 1.3rem;
       padding: 1.1rem 0 1.1rem 0.9rem;
+    }
+    .redes-link.github{
+      margin-left: 0;
     }
   }
   /*fin @media 320*/
