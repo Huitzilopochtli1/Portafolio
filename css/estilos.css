@@ -4,7 +4,7 @@ body {
 }
 
 .header {
-  background-color: #8675a9;
+  background-color: #1a1a2ed3;
   display: flex;
   justify-content: space-between;
   height: 70px;
@@ -62,7 +62,7 @@ li {
 
 .main {
   height: 300px;
-  background-color: #8675a9;
+  background-color: #1a1c20;
   /* background-image: url(../img/Huitzilopochtli.jpg); */
   /* background-size: 400px 300px; */
   /* background-repeat: no-repeat; */
@@ -85,7 +85,7 @@ li {
 }
 
 .main span {
-  color: #005086;
+  color: #18ecbe;
 }
 
 .projects {
@@ -150,7 +150,7 @@ h2 {
 .experience-main-title {
   /* margin-left: 30px; */
   margin: 0px;
-  padding: 1.5rem 0 1.5rem 1.5rem;
+  padding: 1.5rem 0 1.5rem 0rem;
 }
 
 .experiences {
@@ -340,22 +340,34 @@ h2 {
   flex-wrap: inherit;
 }
 @media screen and (max-width: 1024px) {
-  body {
-    /*border: 10px solid lime;*/
+  .experience-main-title {
+    margin: 0px;
+    padding: 1.5rem 0rem 1.5rem 1.5rem;
   }
-}
-/* .flex {
-    display: flex;
-    flex-wrap: wrap;
+  .wrapper.especial {
+    margin: 0px;
   }
-  
-  .caja {
-    border: 1px solid red;
-    width: 200px;
-    height: 200px;
-    flex-shrink: 0;
-  } */
-/*@media screen and (max-width:1024px) {}*/
+  h1 {
+    z-index: 5;
+  }
+  .main figure {
+    width: auto;
+  }
+  .main {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 3rem 1.5rem;
+  }
+  .main figure img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+  }
+} /*------------------------------fin @media 1024------------------------------*/
 
 @media screen and (max-width: 767px) {
   .header {
@@ -419,7 +431,7 @@ h2 {
     padding: 1.3rem 0 1.3rem 1.5rem;
   }
 }
-/*fin @media 767*/
+/*--------------------------------fin @media 767-------------------------------*/
 
 @media screen and (max-width: 580px) {
   .contact {
@@ -447,7 +459,7 @@ h2 {
   .footer-details {
     justify-content: center;
   }
-} /*fin @media 570*/
+} /*-----------------------------fin @media 570------------------------------*/
 
 @media screen and (max-width: 480px) {
   .projects {
@@ -492,7 +504,7 @@ h2 {
     padding: 1rem 1rem 0.5rem 1rem;
   }
 }
-/*fin @media 480*/
+/*---------------------------------fin @media 480------------------------------------*/
 
 @media screen and (max-width: 320px) {
   .project {
@@ -552,50 +564,3 @@ h2 {
     padding: 1rem 1rem 0.5rem 1rem;
   }
 } /*fin @media 320*/
-
-.posiciones {
-  height: 250px;
-  background-color: blueviolet;
-  margin: 1.5rem 1rem;
-  border: 2px solid black;
-  position: relative;
-}
-
-.posiciones p {
-  color: white;
-  font-size: 2rem;
-  background-color: tomato;
-  display: inline-block;
-  /*position: relative;*/
-}
-
-.posiciones p span {
-  /*background-color: lime;*/
-  position: absolute;
-  right: 0;
-  /*top: 0;*/
-}
-
-.aprende {
-  background-color: red;
-  z-index: 1;
-}
-
-.responsive {
-  background-color: coral;
-}
-
-/*vamos a aprender sobre posiciones
-position tiene los valores
-
-1)static---valor por defecto
-2)relative---valores relativos a un elemento pero que mantienen su tamaño original
-3)absolute
-4)fixed sticky
-
-desbloqueo internamente dos propiedades que son :
-
-1)z-index
-
-2)top, left, rigth y bottom
-*/
