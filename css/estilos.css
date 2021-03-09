@@ -174,13 +174,23 @@ h2 {
 .experience-container_image {
   margin: 0px;
   width: 100%;
-  height: 200px;
+  height: 0;
+  padding-top: 56.25%;
+  position: relative;
+  /* height: 200px; */
 }
 
 .experience-image {
-  width: inherit;
-  height: inherit;
-  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  /* width: inherit; */
+  /* height: inherit; */
+  object-fit: cover;
 }
 
 .experience-down {
@@ -564,3 +574,24 @@ h2 {
     padding: 1rem 1rem 0.5rem 1rem;
   }
 } /*fin @media 320*/
+
+.content-video_youtube {
+  background-color: coral;
+  width: 100%;
+  height: 0px;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.video-youtube {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.video-youtube:hover {
+  z-index: 8;
+}
