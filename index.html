@@ -16,7 +16,7 @@
 
   <body>
     <figure class="container_menu-hamburguer">
-      <img class="hamburguer_menu" src="img/hamburguer_menu.png" alt="menu" />
+      <img class="hamburguer_menu" id="hamburguer" src="img/hamburguer_menu.png" alt="menu" />
     </figure>
 
     <header class="header">
@@ -25,7 +25,7 @@
           <img src="img/Huitzilopochtli.ico" alt="logo de Huitzilopochtli" />
         </figure>
 
-        <nav class="menu menu_active">
+        <nav class="menu">
           <ul>
             <li>
               <a class="link" href="#proyecto">Proyectos</a>
@@ -233,5 +233,35 @@
       </div>
     </footer>
     <!-- FIN CLASE FOOTER -->
+
+    <script>
+      const changes = window.matchMedia('screen and (max-width:767px)');
+
+      const menu = document.querySelector('.menu');
+
+      const button_hamburguer = document.querySelector('#hamburguer');
+
+      changes.addListener(validation);
+
+      function validation(event) {
+        if (event.matches) {
+          button_hamburguer.addEventListener('click', ShowHidden);
+        } else {
+          button_hamburguer.removeEventListener('click', ShowHidden);
+        }
+      }
+
+      validation(changes);
+
+      function ShowHidden() {
+        if (menu.classList.contains('menu_active')) {
+          menu.classList.remove('menu_active');
+        } else {
+          menu.classList.add('menu_active');
+        }
+      }
+
+      menu.classList.add('menu_active');
+    </script>
   </body>
 </html>

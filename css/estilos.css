@@ -2,19 +2,19 @@ body {
   margin: 0;
   font-size: 16px;
 }
-
 .container_menu-hamburguer {
   margin: 0px;
   position: fixed;
-  z-index: 200;
-  top: 11px;
-  left: 11px;
+  z-index: 400;
+  top: 8px;
+  left: 8px;
   display: none;
 }
 
 .hamburguer_menu {
   height: 50px;
   width: 50px;
+  z-index: 500;
 }
 
 .header {
